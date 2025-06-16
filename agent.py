@@ -31,7 +31,7 @@ class Agent:
         pass
     
     
-    def train_short_memory(self):
+    def train_short_memory(self, state, action, reward, next_state, done):
         pass
     
     
@@ -53,7 +53,7 @@ def train():
         action = agent.get_action(state_old)
 
         # perform move and get new state
-        reward, done, score = game.play_step(action)
+        reward, done, score = game.play_step(final_move)
         state_new = agent.get_state(game)
 
         # train short memory
