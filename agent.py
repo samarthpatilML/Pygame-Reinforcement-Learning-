@@ -71,6 +71,8 @@ def train():
             if score > record:
                 record = score
                 agent.model.save()
+            
+print('Game', agent.n_games, 'Score', score, 'Record:', record)
 
 if __name__ == "__main__":
     train()    
