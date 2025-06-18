@@ -1,3 +1,4 @@
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -66,5 +67,3 @@ class QTrainer:
         loss.backward()
 
         self.optimizer.step()
-
-
